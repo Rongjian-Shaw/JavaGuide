@@ -274,7 +274,7 @@ list.add(12);
 list.add("a");
 Class<? extends List> clazz = list.getClass();
 Method add = clazz.getDeclaredMethod("add", Object.class);
-//但是通过反射添加，是可以的
+//但是通过反射添加，是可以的 关于反射https://blog.csdn.net/huangliniqng/article/details/88554510
 add.invoke(list, "kl");
 
 System.out.println(list)
